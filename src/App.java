@@ -1,3 +1,5 @@
+import Ejercicio_01_sign.SignValidator;
+import Ejercicio_02_sorting.StackSorter;
 import controllers.Cola;
 import controllers.ColaG;
 import controllers.Stack;
@@ -6,6 +8,7 @@ import models.Persona;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        /*
         //Stack stack=new Stack();
         StackG<Integer> stack = new StackG<>();
         stack.push(10);
@@ -21,7 +24,7 @@ public class App {
         System.out.println("Tam:"+ stack.size());
         stack.printStack();
 
-
+         
         StackG<String> stackString = new StackG<>();
         stackString.push("Sebas");
         stackString.push("soy");
@@ -48,7 +51,7 @@ public class App {
         cola.printCola();
 
         Persona p1=new Persona("Pablo");
-        Persona p2=new Persona("Juan");
+        Persona p2=new Persona("David");
         Persona p3=new Persona("Maria");
 
 
@@ -61,5 +64,47 @@ public class App {
         System.out.println("Atiene a la persona =>"+colaPersonas.remove());
         System.out.println(colaPersonas.size());
         colaPersonas.printCola();
-    }
+
+        Persona encontrada = colaPersonas.findByName("David");
+        if (encontrada != null) {
+            System.out.println("Persona encontrada: " + encontrada);
+        } else {
+            System.out.println("No se encontró a David");
+        }
+        Persona pEliminada = colaPersonas.removeByName("David");
+        if (pEliminada != null) {
+            System.out.println("Persona eliminada: " + pEliminada);
+            colaPersonas.printCola();
+        } else {
+             System.out.println("No se pudo eliminar porque no se encontró a David");
+            }*/
+        System.out.println("-------------------------Ejercicio1------------------------------");
+        SignValidator validador = new SignValidator();
+
+        System.out.println("([]){} es " + validador.isValid("([]){}")); 
+        System.out.println("({)} es " + validador.isValid("({)}"));     
+        System.out.println("()[]{} es " + validador.isValid("()[]{}"));   
+
+
+        StackG<Integer> pilaE2 = new StackG<>();
+        System.out.println("-------------------------Ejercicio1------------------------------");
+        pilaE2.push(10);
+        pilaE2.push(2);
+        pilaE2.push(5);
+        pilaE2.push(8);
+
+        System.out.println("Pila inicial:");
+        pilaE2.printStack();  
+
+        StackSorter sorter = new StackSorter();
+        sorter.sortStack(pilaE2);
+
+        System.out.println("Despues de ordenar:");
+        pilaE2.printStack(); 
+
+
+
+
+        }
+    
 }
