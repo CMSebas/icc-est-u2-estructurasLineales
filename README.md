@@ -1,18 +1,26 @@
-## Getting Started
+# Practica Estructuras Lineales
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Información General
 
-## Folder Structure
+- *Título*: Práctica de Pilas y Colas Genéricas  
+- *Asignatura*: Estructura de Datos  
+- *Carrera*: Computación  
+- *Estudiante*: Mateo Sebastián Morejón Delgado  
+- *Fecha*: 05/06/2025  
+- *Profesor*: Ing. Pablo Torres  
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# Estructuras Lineales en Java: Pilas y Colas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Este proyecto contiene la implementación de estructuras de datos lineales utilizando clases propias y genéricas en Java. Incluye ejercicios prácticos como validación de expresiones con signos y ordenamiento de pilas, todo sin utilizar colecciones estándar como `Set`, `List` o `Queue`.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 🧠 Ejercicio 01: Validar signos balanceados en una cadena
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+En este ejercicio se implementa un algoritmo que evalúa si una cadena contiene paréntesis, llaves y corchetes correctamente balanceados, usando una pila (`StackG<Character>`).
+
+---
+## Ejercicio 02: Ordenar una pila de enteros en orden ascendente
+Este ejercicio utiliza dos pilas (StackG<Integer>) para ordenar los elementos sin usar estructuras auxiliares externas como listas.
