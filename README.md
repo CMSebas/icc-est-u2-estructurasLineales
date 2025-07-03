@@ -5,7 +5,7 @@
 - *Título*: Práctica de Pilas y Colas Genéricas  
 - *Asignatura*: Estructura de Datos  
 - *Carrera*: Computación  
-- *Estudiante*: Mateo Sebastián Morejón Delgado  
+- *Estudiante*: Sebastian Rafael Ceron Miranda
 - *Fecha*: 05/06/2025  
 - *Profesor*: Ing. Pablo Torres  
 
